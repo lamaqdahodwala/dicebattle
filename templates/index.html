@@ -1,0 +1,33 @@
+{% extends 'loggedin.html' %}
+
+{% block content %}
+{% load static %}
+
+<script src="{% static 'main.js' %}"></script>
+<div class="container">
+
+    <div class="columns">
+        <div class="column is-3">
+            <div class="tile is-parent">
+                <div class="tile is-child box">
+                    <h1 class="title">Round totals</h1>
+                </div>
+            </div>
+        </div>
+        <div class="column">
+            <div class="tile is-parent">
+                <div class="tile is-child box">
+                    <h1 class="subtitle">Total possible points: <span id='possiblepoints'></span></h1>
+                </div>
+            </div>
+        </div>
+        <div class="column is-3">
+            <div class="tile is-parent">
+                <div class="tile is-child box">
+                    <h1 class="title">Round totals</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
